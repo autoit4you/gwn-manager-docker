@@ -10,7 +10,7 @@ permissions:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: gwn-manager
+  IMAGE_NAME: ${{ github.repository_owner }}/gwn-manager
 
 jobs:
   build-and-push:

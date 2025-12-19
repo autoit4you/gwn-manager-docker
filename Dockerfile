@@ -7,7 +7,7 @@ RUN apt update && apt install wget
 
 RUN wget https://firmware.grandstream.com/GWN_Manager-1.1.35.10-Ubuntu.tar.gz
 
-FROM ubuntu-latest
+FROM ubuntu:latest
 
 WORKDIR /
 ENV DEBIAN_FRONTEND noninteractive

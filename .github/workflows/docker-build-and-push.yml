@@ -35,6 +35,7 @@ jobs:
         tags: |
           type=ref,event=branch
           type=pep440,pattern={{version}}
+          type=pep440,pattern={{major}}.{{minor}}.{{patch}}
           type=pep440,pattern={{major}}.{{minor}}
           type=pep440,pattern={{major}}
           type=sha

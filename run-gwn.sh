@@ -6,5 +6,7 @@ if [ ! -f /gwn/data/.GWN_MANAGER_DOCKER ] || [ "$GWN_MANAGER_VERSION" != "$(cat 
     echo "$GWN_MANAGER_VERSION" > /gwn/data/.GWN_MANAGER_DOCKER
 fi
 
+chown gwn:gwn /gwn/data /gwn/logs /gwn_backup
+
 /gwn/gwn start
 tail -f /gwn/logs/**/*.log /gwn/logs/**/**/*.log /gwn/logs/**/**/*.out
